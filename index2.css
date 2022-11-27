@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video    {
+ margin: 0;
+ padding: 0;
+}
+ul {
+  list-style: none;
+}
+h1, .h1{
+  font-size: 4rem;            /*******64px******/
+}
+h2 {
+ font-size: 2.25rem           /*****36px*****/
+}
+h3 {
+  font-size: 2rem;           /*****32px*****/
+}
+h4, .h4{
+  font-size: 1.5rem;         /******24px*****/
+}
+h5, .h5 {
+  font-size: 1.25rem;       /********20px*****/
+}
+p {
+  font-size: 1rem;          /******16px*****/
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --color-rich-black:#0A1C26;
+  --color-charcoal:#203B49;
+  --color-beige:#9D8E64;
+  --color-white:#ffff;
+  --fw-bold: 700;
+}
+.spartan-font {
+  font-family: 'League Spartan', sans-serif
+}
+.bold {
+  font-weight: var(--fw-bold);
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.text-beige {
+  color: var(--color-beige);
+}
+.text-center {
+  text-align: center;
+}
+
+.beige {
+  color: var(--color-beige);
+}
+body {
+  text-align: center;
+  background-color: var(--color-rich-black);
+  color: var(--color-white);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main {
+  min-height: 100vh; /*for layout purposes*/
+}
+
+.header-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #0A1C26;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 72px;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-logo {
+  justify-self: center;
+}
+.nav-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.hero-banner {
+  position: relative;
+}
+
+.hero-banner {
+  background-image: url(./images/HeroImage.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-text {
+  text-align: justify;
+  position: absolute;
+  top: 70%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+}
